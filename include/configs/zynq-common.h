@@ -170,8 +170,10 @@
 # define CONFIG_SYS_I2C_MUX_EEPROM_SEL		0x4
 #endif
 
+#ifndef CONFIG_ENV_SIZE
 /* Total Size of Environment Sector */
 #define CONFIG_ENV_SIZE			(128 << 10)
+#endif
 
 /* Allow to overwrite serial and ethaddr */
 #define CONFIG_ENV_OVERWRITE
@@ -191,7 +193,9 @@
 #  define CONFIG_ENV_IS_NOWHERE
 # endif
 
+#ifndef CONFIG_ENV_SECT_SIZE
 # define CONFIG_ENV_SECT_SIZE		CONFIG_ENV_SIZE
+#endif
 # ifndef CONFIG_ENV_OFFSET
 #  define CONFIG_ENV_OFFSET		0xE0000
 # endif
@@ -314,6 +318,7 @@
 #define CONFIG_BOOTCOMMAND		"run $modeboot"
 #endif
 #define CONFIG_SYS_LOAD_ADDR		0 /* default? */
+#define CONFIG_ZERO_BOOTDELAY_CHECK	1
 
 /* Miscellaneous configurable options */
 
