@@ -17,11 +17,8 @@
 #define CONFIG_ZYNQ_GEM0
 #define CONFIG_ZYNQ_GEM_PHY_ADDR0	0
 
-#define CONFIG_SYS_NO_FLASH
-
 #define CONFIG_ZYNQ_USB
 #define CONFIG_ZYNQ_SDHCI0
-#define CONFIG_ZYNQ_QSPI
 
 /*
  * QSPI flash mapping
@@ -42,10 +39,6 @@
 
 
 #define CONFIG_ZYNQ_BOOT_FREEBSD
-#define CONFIG_DEFAULT_DEVICE_TREE	zynq-zturn
-
-#define CONFIG_IPADDR	192.168.1.55
-#define CONFIG_SERVERIP	192.168.1.13
 
 #define CONFIG_EXTRA_ENV_SETTINGS	\
 	"qboot_addr=0x000000\0" \
