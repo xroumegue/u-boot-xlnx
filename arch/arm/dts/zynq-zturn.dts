@@ -56,7 +56,7 @@
 	is-dual = <0>;
 	num-cs = <1>;
 	flash@0 {
-		compatible = "n25q128a11";
+		compatible = "S25FL128S_64K";
 		reg = <0x0>;
 		spi-tx-bus-width = <1>;
 		spi-rx-bus-width = <4>;
