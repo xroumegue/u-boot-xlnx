@@ -1,17 +1,13 @@
 /*
- * Xilinx ZED board DTS
+ * Xilinx ZTURN board DTS
  *
- *  Copyright (C) 2011 - 2015 Xilinx
- *  Copyright (C) 2012 National Instruments Corp.
- *
- * SPDX-License-Identifier:	GPL-2.0+
  */
 /dts-v1/;
 #include "zynq-7000.dtsi"
 
 / {
-	model = "Zynq Zed Development Board";
-	compatible = "xlnx,zynq-zed", "xlnx,zynq-7000";
+	model = "Zynq Zturn Development Board";
+	compatible = "xlnx,zynq-zturn", "xlnx,zynq-7000";
 
 	aliases {
 		ethernet0 = &gem0;
@@ -22,7 +18,7 @@
 
 	memory {
 		device_type = "memory";
-		reg = <0x0 0x20000000>;
+		reg = <0x0 0x40000000>;
 	};
 
 	chosen {
